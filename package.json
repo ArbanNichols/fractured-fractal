@@ -2,19 +2,21 @@
   "name": "react-resume",
   "version": "0.0.1",
   "author": "arban.nichs@gmail.com",
-  "description": "Arban Nichols' resume built using ReactJs + Webpack",
-  "homepage": "https://username.github.io.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArbanNichols/fractured-fractal"
+  },
+  "description": "Deven Thiel's resume built using ReactJs + Webpack",
   "license": "0BSD",
   "keywords": [
     "react",
     "webpack",
     "babel"
   ],
-  "main": "index.jsx",
+  "main": "index.html",
   "scripts": {
     "compile": "webpack --config webpack.config.prod.js --display-error-details --display-reasons --colors --env.PLATFORM=local",
-    "start": "webpack-dev-server --config webpack.config.dev.js --colors --env.PLATFORM=local",
-    "deploy": "gh-pages -d build"
+    "start": "webpack-dev-server --config webpack.config.dev.js --colors --env.PLATFORM=local"
   },
   "dependencies": {
     "prop-types": "^15.7.2",

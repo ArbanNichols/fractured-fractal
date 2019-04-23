@@ -1,0 +1,15 @@
+@import 'animations';
+$reactBlue: #00d8ff;
+$naranja: #ff5733;
+
+.cursor {
+  color: $naranja;
+  position: relative;
+  bottom: 2px;
+  animation: 2s ease-in-out infinite flash;
+}
+
+.cycle {
+  animation-name: fadeInLeft;
+  animation-duration: 0;
+}
