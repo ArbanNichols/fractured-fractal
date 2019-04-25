@@ -3,7 +3,7 @@ import React from 'react';
 const CoverLetter = () => {
   return (
     <div className="coverletter">
-      <h1>&lt;Dev /&gt;</h1>
+      <h3>&lt;Dev /&gt;</h3>
       <strong>TLDR; </strong>
       <span>
         Software Developer / Hardware Specialist working in New York
