@@ -23,7 +23,6 @@ const Header = () => {
         <LinkContainer to="/" exact>
           <Navbar.Brand>
             {'Deven Thiel '}
-            <span className="cursor">&#9613;</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
