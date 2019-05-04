@@ -5,7 +5,7 @@ import headshot from '../../../static/headshot.jpg';
 const Headshot = () => {
   const handleClick = () => {
     navigator.clipboard
-      .writeText('arban.nichs@gmail.com')
+      .writeText('deventhiel@gmail.com')
       .then(() => {
         console.log('Email copied to clipboard');
       })
@@ -15,18 +15,20 @@ const Headshot = () => {
   };
 
   return (
-    <div className="center headshot">
-      <Image alt="headshot" rounded />
+    <div className="headshot">
+      <Image src={headshot} alt="headshot" rounded />
       <p>
         DevenThiel@gmail.com
         <i className="icon ion-md-copy" onClick={handleClick} />
       </p>
-      <a href="https://linkedin.com/in/deventhiel/" target="_blank">
-        <i className="icon ion-logo-linkedin" />
-      </a>
-      <a href="https://github.com/DevenThiel" target="_blank">
-        <i className="icon ion-logo-github" />
-      </a>
+      <div className="links">
+        <a href="https://linkedin.com/in/deventhiel/" target="_blank">
+          <i className="icon ion-logo-linkedin" />
+        </a>
+        <a href="https://github.com/DevenThiel" target="_blank">
+          <i className="icon ion-logo-github" />
+        </a>
+      </div>
     </div>
   );
 };

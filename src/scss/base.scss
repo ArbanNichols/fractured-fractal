@@ -1,7 +1,5 @@
 @import 'animations';
 
-@import 'header';
-
 @import 'coverletter';
 
 @import 'headshot';
@@ -9,6 +7,7 @@
 @import 'experience';
 
 // TODO: fix background image to work with Google Chrome.
+$lg-screen-threshold: 1152px;
 
 html {
   height: 100%;
@@ -26,6 +25,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  @media screen and (max-width: $lg-screen-threshold) {
+    background-image: url(../static/prism.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .center {
