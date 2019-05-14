@@ -1,0 +1,47 @@
+@import 'animations';
+
+@import 'coverletter';
+
+@import 'headshot';
+
+@import 'experience';
+
+// TODO: fix background image to work with Google Chrome.
+$lg-screen-threshold: 1152px;
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: lightgray;
+  background-image: url(../static/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media screen and (max-width: $lg-screen-threshold) {
+    background-image: url(../static/prism.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 100px;
+  align-content: center;
+  justify-content: space-evenly;
+}

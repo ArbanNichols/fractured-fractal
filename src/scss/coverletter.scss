@@ -1,0 +1,40 @@
+$mid-screen-size: 768px;
+$naranja: #ff5733;
+
+.jumbo {
+  margin-top: 50px;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  background-color: rgba(240, 248, 255, 0.829);
+  p {
+    font-size: 16px;
+  }
+}
+
+.cursor {
+  color: $naranja;
+  position: relative;
+  bottom: 2px;
+  animation: 2s ease-in-out infinite flash;
+}
+
+.coverletter {
+  h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-family: 'Inconsolata', monospace;
+
+    @media screen and (max-width: $mid-screen-size) {
+      text-align: center;
+      margin-top: 8px;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    @media screen and (max-width: $mid-screen-size) {
+      margin-top: 24px;
+    }
+  }
+}
