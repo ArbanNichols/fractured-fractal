@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import uuid from '../../../js/utils';
 
 const Experience = ({ ...props }) => {
